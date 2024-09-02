@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Khenichi Kuolimpo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function toggleSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.style.display === 'none') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo">
+                <img src="PRJ.jpg" alt="Foto Khenichi Kuolimpo">
+            </div>
+            <div class="info-pribadi">
+                <h2>Informasi Pribadi</h2>
+                <p>Jembatan Dua Sinar Budi, Jakarta, 11450, Indonesia</p>
+                <p>08578112057</p>
+                <p>khenichi.532520142
+                    @stu.untar.ac.id</p>
+                <p>12 April 2005</p>
+            </div>
+            <div class="skills">
+                <h2>Kemampuan</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Olahraga</li>
+                    <li>Komunikasi</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h2>Bahasa</h2>
+                <ul>
+                    <li>Indonesia</li>
+                    <li>Inggris</li>
+                    <li>Mandarin</li>
+                    <li>Jepang</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Khenichi Kuolimpo</h1>
+            <div class="section" id="pengalaman-kerja">
+                <h2>Pengalaman Kerja</h2>
+                <div class="experience">
+                    <h3>PRJ 2023, Kimbo (Paruh waktu), Jiexpo</h3>
+                    <p>Juni 2023 - Juli 2023</p>
+                </div>
+                <div class="experience">
+                    <h3>PRJ 2024, Kimbo (Paruh waktu), Jiexpo</h3>
+                    <p>Juni 2024 - Juli 2024</p>
+                </div>
+            </div>
+            <div class="section" id="pendidikan">
+                <h2>Pendidikan</h2>
+                <p>SMA, Kristen Yusuf</p>
+                <p>Maret 2020 - Juni 2023</p>
+            </div>
+            <div class="section" id="hobi">
+                <h2>Hobi</h2>
+                <ul>
+                    <li>Menggambar</li>
+                    <li>Bermain games</li>
+                    <li>Bermain alat musik</li>
+                </ul>
+            </div>
+            <button class="toggle-button" onclick="toggleSections()">Toggle Sections</button>
+            <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </div>
+</body>
+</html>
